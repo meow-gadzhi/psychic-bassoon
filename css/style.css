@@ -1,0 +1,520 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	font-size: 100%;
+	font-size: 14px;
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+
+	text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/* Конец сброса стилей */
+
+body {
+	font-family: Arial;
+	color: 333;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	min-height: 100%;
+	flex: 1 1 auto;
+}
+
+/*
+.content {
+	flex: 1 1 auto;
+}
+*/
+
+.title {
+	font-size: 30px;
+	line-height: 36px;
+	color: #445161;
+	/*	 margin-bottom: 24px; */
+}
+
+/* Header start */
+.hi {
+	padding: 50px 0 35px;
+	color: white;
+	background-color: #445162;
+}
+
+.hi__row {
+	display: flex;
+
+	justify-content: space-between;
+}
+
+.hi__body {
+	padding: 0 20px 0 0;
+}
+
+.hi__title {
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 50px;
+	margin: 0 0 37px;
+}
+
+.hi__list li {
+	font-size: 20px;
+	line-height: 36px;
+	margin-left: 35px;
+	list-style: url(../img/ico/check.svg);
+}
+
+.hi__list li:last-child {
+	margin-left: 35px;
+}
+
+/* Header end */
+
+/* About start */
+.about {
+	padding: 50px 0;
+}
+
+.about__row {
+	display: flex;
+}
+
+.about__image {
+	flex: 0 0 430px;
+}
+
+.about__body {
+	padding-right: 68px;
+	flex: 1 1 auto;
+}
+
+.about__title {
+	margin: 0 0 23px;
+}
+
+.about__text {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 11px;
+	color: 333;
+}
+
+/* About end */
+
+/* Dignity start */
+.dignity {
+	background-color: #f5f5f5;
+	padding: 43px 0 47px;
+}
+
+.dignity h2 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+	color: #445161;
+	margin-bottom: 22px;
+}
+
+.dignity .list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dignity p {
+	flex: 0 1 50%;
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 42px;
+	padding-right: 20px;
+	background-image: url(../img/ico/plus.svg);
+	background-repeat: no-repeat;
+	background-size: 33px;
+	background-position: 0 5px;
+	margin-bottom: 27px;
+}
+
+.dignity p:nth-of-type(1n+5) {
+	margin-bottom: 0;
+}
+
+/* Dignity end */
+
+/* Scrinshots start */
+.scrin {
+	padding: 50px 0 20px;
+}
+
+.cols__title {
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.cols_row {
+	display: flex;
+
+	flex-wrap: wrap;
+}
+
+.cols_col {
+	margin: 0 0 30;
+	margin-right: 11px;
+
+	flex: 0 1 49%;
+}
+
+.col {
+	padding-right: 0;
+}
+
+.item__row {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.item__image {
+	flex: 0 0 200px;
+}
+
+.item__body {
+	padding: 0 0 0 15px;
+
+	flex: 1 1 auto;
+}
+
+.item__title {
+	font-size: 24px;
+	line-height: .85;
+	/* Выравниваем по верху изображения */
+	padding-bottom: 10px;
+	color: #445161;
+}
+
+.item__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+}
+
+/* Scrinshots end */
+
+/* Reviews start */
+.reviews {
+	padding: 44px 0 20px;
+	background-color: #f6f6f6;
+}
+
+.revs__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.rev__col {
+	margin: 0 0 30px;
+	margin-right: 11px;
+
+	flex: 0 1 49%;
+}
+
+.reviews .col {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.rev__row {
+	display: flex;
+}
+
+.rev__image {
+	flex: 0 0 75px;
+}
+
+.rev__body {
+	padding: 16px 6px 12px 15px;
+	margin: 0 0 0 28px;
+	flex: 1 1 auto;
+	background-color: #ebebeb;
+	max-width: 470px;
+	border-radius: 5px;
+}
+
+
+.rev__text {
+	font-style: italic;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333;
+	margin-bottom: 6px;
+}
+
+.rev__author {
+	font-size: 14px;
+	line-height: 18px;
+	color: #989898;
+}
+
+/* Reviews end */
+
+/* Buy start */
+.buy {
+	padding: 50px 0;
+}
+
+.buy__title {
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.buy__body {
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+.buy__row {
+	display: flex;
+	margin: 0 -22.5px;
+}
+
+.buy__col {
+	padding: 0 22.5px;
+	flex: 1 1 33.333%;
+	display: flex;
+}
+
+.buy__item {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	color: white;
+	border: 2px solid #445161;
+	border-radius: 5px;
+	background-color: #445161;
+	flex: 1;
+}
+
+.buy__subtitle {
+	font-size: 24px;
+	line-height: 30px;
+	padding: 11px 0;
+	text-align: center;
+}
+
+.buy__label {
+	font-size: 40px;
+	line-height: 30px;
+	padding: 18px 0;
+	text-align: center;
+	color: #445161;
+	background-color: white;
+}
+
+.buy__text {
+	font-size: 14px;
+	line-height: 24px;
+	padding: 15px 18px;
+	list-style-position: inside;
+	flex: 1;
+}
+
+.buy__btn {
+	font-weight: bold;
+	display: block;
+	height: 40px;
+	margin: 0 20px;
+	text-align: center;
+	color: #445161;
+	background-color: white;
+	font-size: 18px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+/* Buy end */
+
+/* Contacts start */
+.contacts {
+	background-color: #445162;
+	padding: 44px 0 50px;
+}
+
+.contacts__title {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.cotacts__body {
+	width: 800px;
+	margin: 0 auto;
+}
+
+form {
+	width: 500px;
+	/* float: left; */
+	margin-right: 46px;
+}
+
+input, textarea {
+	display: block;
+	font-size: 16px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: 0;
+	margin-bottom: 20px;
+}
+
+input {
+	width: 500px;
+	height: 40px;
+}
+
+textarea {
+	resize: none;
+	width: 500px;
+	height: 170px;
+}
+
+::placeholder {
+	color: #445161;
+}
+
+button {
+	border: 0;
+	width: 140px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #445161;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+.nav {
+	display: flex;
+}
+svg {
+	fill: white;
+	width: 42px;
+	height: 42px;
+}
+.soc_cont {
+	margin-bottom: 20px;
+	
+}
+
+.cont {
+	width: 25px;
+	height: 25px;
+	vertical-align:bottom;
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	
+}
+
+/* Contacts start */
+
+
+
+
+
+/* Footer start */
+.footer {
+	background-color: #f5f5f5;
+}
+
+.footer_row {
+	display: flex;
+	height: 26px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__text {
+	font-size: 12px;
+	letter-spacing: .3px;
+}
+
+/* Footer end */
